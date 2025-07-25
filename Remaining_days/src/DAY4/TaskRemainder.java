@@ -13,7 +13,7 @@ interface ReminderTask
 public class TaskRemainder {
 	public static void main(String[] args) {
 		
-		String [] reminderHours = {"7:00","10:00","16:00","21:33"};
+		String [] reminderHours = {"7:00","10:12","16:00","21:33"};
 		
 			String[] displayMessage = {"Time for Breakfast", 
 								"Time to go to office", 
