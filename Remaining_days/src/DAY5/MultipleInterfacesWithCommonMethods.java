@@ -9,7 +9,8 @@ interface B {
 }
 
 interface C {
-    void display();
+      void display();
+      
 }
 
 class D implements A, B, C {
