@@ -6,7 +6,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class NavigateMethods {
+public class NavigateMethodsPageBasics {
     WebDriver driver;
 
     @BeforeMethod
@@ -39,7 +39,14 @@ public class NavigateMethods {
 
         // Refresh the page
         driver.navigate().refresh();
-        System.out.println("Page refreshed: " + driver.getTitle());
+        System.out.println("Page refreshed: " + driver.getTitle()); 
+        // Title = the html title tag of current web page
+        System.out.println("Current url: " + driver.getCurrentUrl());
+        // current url = url of current web page
+        System.out.println("Window handle: " + driver.getWindowHandle());
+        // window handle = unique id (string) of web page to idetify the work
+        System.out.println("Window handle: " + driver.getWindowHandles());
+        //set of window handles used when multiple tabs/pop ups
     }
 
 //    @AfterMethod
